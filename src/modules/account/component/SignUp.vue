@@ -74,13 +74,13 @@
                 </a>
               </div>
               <div class="col-sm-6">
-                <a href="/">
+                <router-link v-bind:to="{path:'/'}">
                   <div class="link">
                     <p class="h5 mb-2">
                       <b-icon icon="box-arrow-right"></b-icon>Log In
                     </p>
                   </div>
-                </a>
+                </router-link>
               </div>
             </div>
 

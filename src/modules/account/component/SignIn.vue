@@ -39,13 +39,13 @@
               </div>
 
               <div class="col-sm-6">
-                <a href="/signup">
+                <router-link v-bind:to="{path:'/signup'}">
                   <div class="link">
                     <p class="h5 mb-2">
                       <b-icon icon></b-icon>Create Account
                     </p>
                   </div>
-                </a>
+                </router-link>
               </div>
             </div>
 

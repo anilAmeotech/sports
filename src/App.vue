@@ -1,32 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div v-if="$store.state.isUserLogin">
+      <appHeader />
     </div>
     <router-view/>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import appHeader from '@/modules/helper/appHeader.vue'
+export default Vue.extend({
+  components: {
+    appHeader,
+  },
+})
+</script>
+
 
 <style lang="scss">
+@import './custom.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  color: #2c3e50;  
 }
 </style>

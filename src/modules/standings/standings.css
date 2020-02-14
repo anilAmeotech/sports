@@ -1,0 +1,180 @@
+.standings {
+  background: #cecccc;
+  float: left;
+  width: 100%;
+  background-color: #ebebeb;
+}
+.standings h3 {
+  margin-top: 20px;
+}
+.standings .custom-standings {
+  padding: 13px;
+  width: 76%;
+  margin: 0 135px !important;
+}
+.standings .custom-standings .b-icon.bi {
+  float: right;
+}
+.standings .custom-standings p {
+  float: left;
+}
+.standings .btn {
+  width: 10%;
+  margin: 22px 0 40px 0px;
+}
+.standings .container {
+  display: flex;
+  --bracket-line-color: #414750;
+  --bracket-line-width: 2px;
+  --bracket-line-width-half: calc(var(--bracket-line-width) / 2);
+  --bracket-match-border-width: 2px;
+  --bracket-match-bg-color: #5a616d;
+  --bracket-match-font-color: #fff;
+  --bracket-team-margin: 10px;
+  --bracket-team-height: 30px;
+  --bracket-match-margin: 20px;
+  --bracket-match-height: calc(var(--bracket-match-margin) * 2 + var(--bracket-team-height) * 2);
+}
+.standings .bracket {
+  display: flex;
+  flex: 3 1 auto;
+}
+.standings .bracket.reverse {
+  flex-direction: row-reverse;
+}
+.standings .bracket.reverse .round {
+  padding: 0 0 0 5px;
+}
+.standings .bracket.reverse .round .card {
+  margin: 0px 0px 10px 0px;
+}
+.standings .bracket.reverse .round:nth-child(2) .match {
+  border-right: var(--bracket-line-width) solid var(--bracket-line-color);
+}
+.standings .bracket.reverse .round:nth-child(3) .match {
+  border-right: var(--bracket-line-width) solid var(--bracket-line-color);
+  height: 48%;
+}
+.standings .bracket.reverse .round:nth-child(3) .team span {
+  margin-left: 0;
+}
+.standings .bracket.reverse .round:nth-child(1) .team span {
+  margin-right: 0;
+  margin-left: var(--bracket-team-margin);
+}
+.standings .bracket.final {
+  flex-grow: 1;
+  width: 12%;
+  padding: 7px;
+  margin-top: 15%;
+}
+.standings .round {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.standings .round .winnerimg {
+  margin-left: 50px;
+}
+.standings .round h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+}
+.standings .round:nth-child(2) .match {
+  height: calc(var(--bracket-match-height) + var(--bracket-line-width));
+  max-height: calc(var(--bracket-match-height) + var(--bracket-line-width));
+}
+.standings .round:nth-child(3) .match {
+  height: calc(var(--bracket-match-height) * 2 + var(--bracket-line-width));
+  max-height: calc(var(--bracket-match-height) * 2 + var(--bracket-line-width));
+}
+.standings .match {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  margin: var(--bracket-match-margin) 0;
+  justify-content: center;
+}
+.standings .match > h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: calc(var(--bracket-team-height) * -1);
+}
+.standings .match h5 {
+  font-size: 1.25rem;
+  margin-top: 30%;
+}
+.standings .team {
+  position: relative;
+  box-sizing: border-box;
+  height: var(--bracket-team-height);
+  max-height: var(--bracket-team-height);
+}
+.standings .team:first-child {
+  border-bottom: var(--bracket-line-width-half) solid var(--bracket-line-color);
+}
+.standings .team:last-child {
+  border-top: var(--bracket-line-width-half) solid var(--bracket-line-color);
+  width: 93%;
+  margin: 0 0 0 3px;
+}
+.standings .team:last-child span {
+  border-top: 0;
+}
+.standings .team span {
+  display: flex;
+  color: var(--bracket-match-font-color);
+  background: var(--bracket-match-bg-color);
+  margin: 0 var(--bracket-team-margin);
+  padding: 5px;
+  box-sizing: border-box;
+  border: var(--bracket-line-width-half) solid var(--bracket-line-color);
+  height: var(--bracket-team-height);
+}
+.standings .bracket.forward .round {
+  padding: 0 0 0 5px;
+}
+.standings .bracket.forward .round .card {
+  margin: 0px 0px 10px 0px;
+}
+.standings .bracket.forward .round:nth-child(2) .match {
+  border-left: var(--bracket-line-width) solid var(--bracket-line-color);
+}
+.standings .bracket.forward .round:nth-child(3) .match {
+  border-left: var(--bracket-line-width) solid var(--bracket-line-color);
+  height: 48%;
+}
+.standings .bracket.forward .round:nth-child(3) .team span {
+  margin-right: 0;
+}
+.standings .bracket.forward .round:nth-child(1) .team span {
+  margin-left: 0;
+}
+.standings .bracket.forward .semi .round {
+  height: 21%;
+}
+.standings .match.third .team span {
+  margin: 0;
+}
+.standings .match.final .team span {
+  margin: 0;
+}
+.standings .row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: 0px;
+  margin-top: -21px;
+}
+.standings .row .cols-6 {
+  padding: 0px 22px 0px 12px;
+}

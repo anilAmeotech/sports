@@ -1,0 +1,124 @@
+.profile {
+  height: calc(100vh - 40px);
+  background: #cecccc;
+  float: left;
+  width: 100%;
+  background-color: #ebebeb;
+}
+.profile .myprofile h5 {
+  margin-top: 10px;
+}
+.profile .myprofile .tabs .nav-tabs {
+  border: none;
+  margin: 19px 0px;
+}
+.profile .myprofile .tabs .nav-tabs .nav-item .nav-link {
+  background-color: none;
+  border: none;
+  color: #696969;
+  padding: 3px 15px;
+  text-decoration: none;
+  outline: none;
+}
+.profile .myprofile .tabs .nav-tabs .nav-item .nav-link .nav-link.active {
+  border-color: none;
+  background-color: none;
+  color: #495057;
+  border-bottom: 1px solid #414bda;
+}
+.profile .myprofile .tabs .nav-tabs .nav-item .nav-link .nav-link.active ul li a {
+  color: #000;
+}
+.profile .myprofile .tabs .nav-tabs .active {
+  background: none;
+  color: #000 !important;
+  border-bottom: solid 1px #4d4dd6 !important;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .image {
+  float: left;
+  padding: 3px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .profile {
+  margin-top: 10%;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .profile .card {
+  border: none;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .profile img {
+  opacity: 0.8;
+  float: left;
+  align-self: center;
+  border-style: none;
+  width: 80px;
+  height: 80px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .my-1 {
+  margin-left: 15px;
+  display: flex;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .my-1 label {
+  font-size: 20px;
+  display: flex;
+  margin-top: 0px;
+  margin-right: 20px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .my-1 .btn-primary {
+  margin-left: 20px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .my-1 .form-control {
+  width: 40%;
+  display: flex;
+  margin-bottom: 0.25rem !important;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .friendsprofile {
+  width: 70%;
+  margin-top: 6%;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .friendsprofile .card {
+  border: none;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .friendsprofile img {
+  align-self: center;
+  border-style: none;
+  border-radius: 42px;
+  width: 80px;
+  height: 80px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body h5 {
+  float: left;
+  margin-left: 25px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput {
+  background-color: #fff;
+  width: 70%;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .pro-logo {
+  opacity: 0.8;
+  float: left !important;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .pro-logo:hover {
+  opacity: 0.2;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox {
+  height: auto;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox .btn {
+  margin: 21px 10px 30px 16px;
+  border-color: #ebebeb;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox .btn .google {
+  margin-left: 10px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox .btn .gogle {
+  height: 25px;
+  width: 25px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox .custom-form label {
+  float: left;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+.profile .myprofile .tabs .tab-content .tab-pane .profileinput .inbox .custom-form .primary {
+  float: right;
+  width: 18%;
+}

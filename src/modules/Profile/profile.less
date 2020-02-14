@@ -1,0 +1,173 @@
+.profile {
+  height: calc(100vh - 40px);
+  background: #cecccc;
+  float: left;
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+
+  .myprofile {
+    h5 {
+      margin-top: 10px;
+    }
+
+    .tabs {
+      .nav-tabs {
+        border: none;
+        margin: 19px 0px;
+
+        .nav-item {
+          .nav-link {
+            background-color: none;
+            border: none;
+            color: #696969;
+            padding: 3px 15px;
+            text-decoration: none;
+            outline: none;
+
+            .nav-link.active {
+              border-color: none;
+              background-color: none;
+              color: #495057;
+              border-bottom: 1px solid #414bda;
+
+              ul {
+                li {
+                  a {
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .active {
+          background: none;
+          color: #000 !important;
+          border-bottom: solid 1px #4d4dd6 !important;
+        }
+      }
+
+      .tab-content {
+        .tab-pane {
+          .container {
+            .card {
+              .card-body {
+                .image {
+                  float: left;
+                  padding: 3px;
+                }
+
+                .profile {
+                  margin-top: 10%;
+
+                  .card {
+                    border: none;
+                  }
+
+                  img {
+                    opacity: 0.8;
+                    float: left;
+                    align-self: center;
+                    border-style: none;
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+
+                .my-1 {
+                  margin-left: 15px;
+                  display: flex;
+
+                  label {
+                    font-size: 20px;
+                    display: flex;
+                    margin-top: 0px;
+                    margin-right: 20px;
+                  }
+
+                  .btn-primary {
+                    margin-left: 20px;
+                  }
+
+                  .form-control {
+                    width: 40%;
+                    display: flex;
+                    margin-bottom: 0.25rem !important;
+                  }
+                }
+
+                .friendsprofile {
+                  width: 70%;
+                  margin-top: 6%;
+
+                  .card {
+                    border: none;
+                  }
+
+                  img {
+                    align-self: center;
+                    border-style: none;
+                    border-radius: 42px;
+                    width: 80px;
+                    height: 80px;
+                  }
+                }
+
+                h5 {
+                  float: left;
+                  margin-left: 25px;
+                }
+              }
+            }
+          }
+
+          .profileinput {
+            background-color: #fff;
+            width: 70%;
+
+            .pro-logo {
+              opacity: 0.8;
+              float: left !important;
+            }
+
+            .pro-logo:hover {
+              opacity: 0.2;
+            }
+
+            .inbox {
+              height: auto;
+
+              .btn {
+                margin: 21px 10px 30px 16px;
+                border-color: #ebebeb;
+
+                .google {
+                  margin-left: 10px;
+                }
+
+                .gogle {
+                  height: 25px;
+                  width: 25px;
+                }
+              }
+
+              .custom-form {
+                label {
+                  float: left;
+                  margin-left: 13px;
+                  margin-top: 10px;
+                }
+
+                .primary {
+                  float: right;
+                  width: 18%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

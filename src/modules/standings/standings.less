@@ -1,0 +1,265 @@
+.standings {
+    // height: calc(100vh - 40px);
+    background: #cecccc;
+    float: left;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    .custom-standings {
+        padding: 13px;
+        width: 76%;
+        margin: 0 135px !important;
+
+        .b-icon.bi {
+            float: right;
+        }
+
+        p {
+            float: left;
+        }
+    }
+
+    .btn {
+        width: 10%;
+        margin: 22px 0 40px 0px;
+    }
+
+
+    .container {
+        display: flex;
+        --bracket-line-color: #414750;
+        --bracket-line-width: 2px;
+        --bracket-line-width-half: calc(var(--bracket-line-width) / 2);
+        --bracket-match-border-width: 2px;
+        --bracket-match-bg-color: #5a616d;
+        --bracket-match-font-color: #fff;
+        --bracket-team-margin: 10px;
+        --bracket-team-height: 30px;
+        --bracket-match-margin: 20px;
+        --bracket-match-height: calc(var(--bracket-match-margin) * 2 + var(--bracket-team-height) * 2);
+    }
+
+    .bracket {
+        display: flex;
+        flex: 3 1 auto;
+    }
+
+    .bracket.reverse {
+        flex-direction: row-reverse;
+
+        .round {
+            padding: 0 0 0 5px;
+
+            .card {
+                margin: 0px 0px 10px 0px;
+            }
+
+            &:nth-child(2) {
+                .match {
+                    border-right: var(--bracket-line-width) solid var(--bracket-line-color);
+                }
+            }
+
+            &:nth-child(3) {
+                .match {
+                    border-right: var(--bracket-line-width) solid var(--bracket-line-color);
+                    height: 48%;
+                }
+
+                .team {
+                    span {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .team {
+
+                    span {
+                        margin-right: 0;
+                        margin-left: var(--bracket-team-margin);
+                    }
+                }
+            }
+        }
+    }
+
+    .bracket.final {
+        flex-grow: 1;
+        width: 12%;
+        padding: 7px;
+        margin-top: 15%;
+    }
+
+    .round {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        justify-content: space-around;
+        padding-top: 20px;
+
+        // .card {
+        //     margin: 0px 0px 10px 0px;
+        // }
+
+        .winnerimg {
+            margin-left: 50px;
+        }
+
+        h3 {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            .match {
+                height: calc(var(--bracket-match-height) + var(--bracket-line-width));
+                max-height: calc(var(--bracket-match-height) + var(--bracket-line-width));
+            }
+        }
+
+        &:nth-child(3) {
+            .match {
+                height: calc(var(--bracket-match-height) * 2 + var(--bracket-line-width));
+                max-height: calc(var(--bracket-match-height) * 2 + var(--bracket-line-width));
+            }
+        }
+    }
+
+    .match {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-sizing: border-box;
+        margin: var(--bracket-match-margin) 0;
+        justify-content: center;
+
+        >h3 {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: calc(var(--bracket-team-height) * -1);
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            margin-top: 30%;
+        }
+    }
+
+    .team {
+        position: relative;
+        box-sizing: border-box;
+        height: var(--bracket-team-height);
+        max-height: var(--bracket-team-height);
+
+        &:first-child {
+            border-bottom: var(--bracket-line-width-half) solid var(--bracket-line-color);            
+        }
+
+        &:last-child {
+            border-top: var(--bracket-line-width-half) solid var(--bracket-line-color);
+            width: 93%;
+            margin: 0 0 0 3px;
+
+            span {
+                border-top: 0;
+            }
+        }
+
+        span {
+            display: flex;
+            color: var(--bracket-match-font-color);
+            background: var(--bracket-match-bg-color);
+            margin: 0 var(--bracket-team-margin);
+            padding: 5px;
+            box-sizing: border-box;
+            border: var(--bracket-line-width-half) solid var(--bracket-line-color);
+            height: var(--bracket-team-height);
+        }
+    }
+
+    .bracket.forward {
+        .round {
+            padding: 0 0 0 5px;
+
+            .card {
+                margin: 0px 0px 10px 0px;
+            }
+
+            &:nth-child(2) {
+                .match {
+                    border-left: var(--bracket-line-width) solid var(--bracket-line-color);
+                }
+            }
+
+            &:nth-child(3) {
+                .match {
+                    border-left: var(--bracket-line-width) solid var(--bracket-line-color);
+                    height: 48%;
+                }
+
+                .team {
+
+                    span {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .team {
+                    span {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .semi {
+            .round {
+                height: 21%;
+            }
+        }
+    }
+
+    .match.third {
+        .team {
+            span {
+                margin: 0;
+            }
+        }
+    }
+
+    .match.final {
+        .team {
+
+
+            span {
+                margin: 0;
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: 0px;
+        margin-top: -21px;
+
+        .cols-6 {
+            padding: 0px 22px 0px 12px;
+        }
+    }
+}

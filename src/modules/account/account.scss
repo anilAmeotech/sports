@@ -87,6 +87,12 @@ $MBSCREEN :"screen and (max-width: 575px)";
         margin-right: 0px;
         margin-left: 0px;
     }
+    .imgstyle{
+        background-color: #f4f6fa; width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
 }
 
 .signUp {

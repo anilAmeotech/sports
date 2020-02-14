@@ -60,7 +60,7 @@
             </div>
           </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 imgstyle">
           <img class="align-content" src="../../../assets/sportclub.png" />
         </div>
       </div>

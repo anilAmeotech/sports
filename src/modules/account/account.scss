@@ -63,14 +63,12 @@ $MBSCREEN :"screen and (max-width: 575px)";
     }
     .fb {
         margin-left: 5px;
-        margin-top: 43px;
-        /* color: black; */
+        margin-top: 43px;        
         text-decoration: none;
     }
     .google {
         margin-left: 5px;
-        margin-top: 44px;
-        /* color: black; */
+        margin-top: 44px;       
         text-decoration: none;
     }
     .gogle {
@@ -174,6 +172,11 @@ $MBSCREEN :"screen and (max-width: 575px)";
     }
     label.checkbox-inline {
         font-size: 15px;
+        margin-left: 0px;
+    }
+    .row {
+        margin-bottom: -25px;
+        margin-right: 0px;
         margin-left: 0px;
     }
 }

@@ -1,7 +1,13 @@
-// @MBSCREEN :~"screen and (max-width: 575px)";
+@XLSCREEN :~'screen and (min-width: 1900px)';
+@LGSCREEN :~'screen and (max-width: 1899px) and (min-width: 1600px)';
+@MDSCREEN :~'screen and (max-width: 1599px) and (min-width: 1200px)';
+@SMSCREEN :~'screen and (max-width: 1199px) and (min-width: 1024px)';
+@XSSCREEN :~'screen and (max-width: 1023px) and (min-width: 700px)';
+@MBSCREEN :~'screen and (max-width: 699px)';
 
 .league {
-  height: calc(100vh - 40px);
+  // height: calc(100vh - 40px);
+  height: 100vh;
   background: #cecccc;
   float: left;
   width: 100%;
@@ -252,7 +258,7 @@
   float: left;
   width: 100%;
   background-color: rgb(235, 235, 235);
-
+  
   h3 {
     text-align: center;
     color: rgb(48, 44, 44);
@@ -328,7 +334,7 @@
   }
 
   .secondcol {
-    .float-left {
+      .float-left {
       float: left !important;
       width: 100%;
       margin-bottom: 25px;

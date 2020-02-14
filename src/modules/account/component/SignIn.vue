@@ -30,12 +30,10 @@
 
             <p class="text-danger" v-if="errorMessage">{{ errorMessage }}</p>
             <div class="row">
-              <div class="col-sm-6">
-                <a href="/league">
+              <div class="col-sm-6">               
                   <div>
                     <button class="btn" type="submit">Sign In</button>
                   </div>
-                </a>
               </div>
 
               <div class="col-sm-6">

@@ -39,11 +39,13 @@
               </div>
 
               <div class="col-sm-6">
-                <div class="link">
-                  <p class="h5 mb-2">
-                    <b-icon icon="lock"></b-icon>Forget Password
-                  </p>
-                </div>
+                <a href="/signup">
+                  <div class="link">
+                    <p class="h5 mb-2">
+                      <b-icon icon></b-icon>Create Account
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -59,7 +61,7 @@
           </form>
         </div>
         <div class="col-md-6">
-          <img class="align-content" src="../../../assets/sportclub.png" />        
+          <img class="align-content" src="../../../assets/sportclub.png" />
         </div>
       </div>
     </div>

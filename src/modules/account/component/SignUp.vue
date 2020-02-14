@@ -74,11 +74,13 @@
                 </a>
               </div>
               <div class="col-sm-6">
-                <div class="link">
-                  <p class="h5 mb-2">
-                    <b-icon icon="box-arrow-right"></b-icon>Log In
-                  </p>
-                </div>
+                <a href="/">
+                  <div class="link">
+                    <p class="h5 mb-2">
+                      <b-icon icon="box-arrow-right"></b-icon>Log In
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -94,7 +96,7 @@
           </form>
         </div>
         <div class="col-md-6">
-          <img class="align-content" src="../../../assets/sportclub.png" />         
+          <img class="align-content" src="../../../assets/sportclub.png" />
         </div>
       </div>
     </div>

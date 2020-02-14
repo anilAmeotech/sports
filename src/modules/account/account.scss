@@ -5,8 +5,7 @@ $MBSCREEN :"screen and (max-width: 575px)";
         display: inline-block;
         margin-bottom: 0px;
         margin-top: 14px;
-        margin-left: 12px;
-        float: left;
+        float: left;        
     }
     .btn {
         margin-top: 5%;
@@ -16,6 +15,7 @@ $MBSCREEN :"screen and (max-width: 575px)";
         border-radius: 20px;
         width: 60%;
         float: left;
+        margin-left: -15px;
     }
     .link {
         // margin-left: 53%;
@@ -48,6 +48,7 @@ $MBSCREEN :"screen and (max-width: 575px)";
         color: #4d4d4d;
     }
     .h5 {
+        margin-right: -14px;
         font-size: 17px;
         color: #4d4d4d;
     }
@@ -91,8 +92,7 @@ $MBSCREEN :"screen and (max-width: 575px)";
 .signUp {
     label {
         margin-bottom: 0px;
-        margin-top: 14px;
-        margin-left: 12px;
+        margin-top: 14px;        
         float: left;
     }
     .btn {
@@ -160,6 +160,7 @@ $MBSCREEN :"screen and (max-width: 575px)";
         height: 30px;
         width: 30px;
         margin-top: 40px;
+        margin-left: 12px;
     }
     img.align-content {
         width: 100%;

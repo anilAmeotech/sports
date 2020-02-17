@@ -74,7 +74,7 @@
                           formSubmit ? 'fa fa-spinner fa-spin' : ''
                         ]"
                       ></span>
-                      Create Account
+                       {{ loader ? 'Loading...' : 'Create Account'  }}                      
                     </button>
                   </div>
                 </a>

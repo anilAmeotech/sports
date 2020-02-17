@@ -39,7 +39,7 @@
                         role="status"
                         aria-hidden="true"
                       ></span>                      
-                      Sign In
+                      {{ loader ? 'Loading...' : 'Sign In'  }}
                     </button>                
                 </div>
               </div>

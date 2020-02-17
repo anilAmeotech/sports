@@ -1,4 +1,4 @@
-# sports
+# SportClub
 
 ## Project setup
 ```

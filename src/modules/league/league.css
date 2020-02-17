@@ -109,6 +109,9 @@
   display: table;
   border-top: none;
 }
+.createleague .custom-card .tabs .tab-content .tab-pane .tablist .mb-1 {
+  margin-left: -40px;
+}
 .createleague .custom-card .tabs .tab-content .tab-pane .categoory-list {
   margin-left: 0;
   padding: 0px 0;

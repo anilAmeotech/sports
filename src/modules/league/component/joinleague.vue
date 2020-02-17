@@ -33,21 +33,23 @@
             <b-card-text class="float-right">Active Teams</b-card-text>
           </div>
           <div class="tablist" role="tablist">
-            <b-row>
+            <b-row v-for="item in items" v-bind:key="item.name">
               <b-col cols="1">
                 <b-icon-alert-circle></b-icon-alert-circle>
               </b-col>
               <b-col cols="8">
                 <div no-body class="mb-1 custom-tab">
-                  <a block href="#" v-b-toggle.accordion-1 variant="info">League 1</a>
-                  <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                 <a block href="#" v-b-toggle.v-bind:id="item.id" variant="info">{{item.name}}</a>
+                    <b-collapse
+                      v-bind:id="item.id"
+                      visible
+                      accordion="my-accordion"
+                      role="tabpanel"
+                    >
                     <div class="collpase-content">
                       <b-card-text>
-                        <div>
-                          <b-table hover :items="items"></b-table>
-                        </div>
-                      </b-card-text>
-                      <!-- <b-card-text>{{ text }}</b-card-text> -->
+                       this is demo page
+                      </b-card-text>  
                     </div>
                   </b-collapse>
                 </div>
@@ -64,95 +66,24 @@
 
                   <p>Please read carefully all terms and conditions</p>
                   <label class="checkbox-inline">
-                    <input type="checkbox" name="checkbox" /> I
+                    <input type="checkbox" v-model="isagree" name="checkbox" /> I
                     understand and agree to
                     <a href>Privacy Policy</a> and
                     <a href>Terms of Services</a>
                   </label>
                   <template v-slot:modal-footer="{}">
-                    <div class="popup" style="float:left; width:100%;">
-                      <b-button
+                    <div class="popup" style="float:left; width:100%;">                      
+                      <b-button                        
+                       :disabled="!isagree"              
                         pill
                         size="md"
                         style="width: 20%;"
-                        variant="primary"
+                        variant="primary"                                        
                         @click="Join()"
                       >Join</b-button>
                     </div>
                   </template>
                 </b-modal>
-              </b-col>
-            </b-row>
-
-            <b-row>
-              <b-col cols="1">
-                <b-icon-alert-circle></b-icon-alert-circle>
-              </b-col>
-              <b-col cols="8">
-                <div no-body class="mb-1 custom-tab">
-                  <a block href="#" v-b-toggle.accordion-2 variant="info">League 2</a>
-                  <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
-                    <div class="collpase-content">
-                      <b-card-text>
-                        I start opened because
-                        <code>visible</code> is
-                        <code>true</code>
-                      </b-card-text>
-                      <!-- <b-card-text>{{ text }}</b-card-text> -->
-                    </div>
-                  </b-collapse>
-                </div>
-              </b-col>
-              <b-col cols="3">
-                <b-button variant="primary">Join</b-button>
-              </b-col>
-            </b-row>
-
-            <b-row>
-              <b-col cols="1">
-                <b-icon-alert-circle></b-icon-alert-circle>
-              </b-col>
-              <b-col cols="8">
-                <div no-body class="mb-1 custom-tab">
-                  <a block href="#" v-b-toggle.accordion-3 variant="info">League 3</a>
-                  <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
-                    <div class="collpase-content">
-                      <b-card-text>
-                        I start opened because
-                        <code>visible</code> is
-                        <code>true</code>
-                      </b-card-text>
-                      <!-- <b-card-text>{{ text }}</b-card-text> -->
-                    </div>
-                  </b-collapse>
-                </div>
-              </b-col>
-              <b-col cols="3">
-                <b-button variant="primary">Join</b-button>
-              </b-col>
-            </b-row>
-
-            <b-row>
-              <b-col cols="1">
-                <b-icon-alert-circle></b-icon-alert-circle>
-              </b-col>
-              <b-col cols="8">
-                <div no-body class="mb-1 custom-tab">
-                  <a block href="#" v-b-toggle.accordion-4 variant="info">League 4</a>
-                  <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
-                    <div class="collpase-content">
-                      <b-card-text>
-                        I start opened because
-                        <code>visible</code> is
-                        <code>true</code>
-                      </b-card-text>
-                      <!-- <b-card-text>{{ text }}</b-card-text> -->
-                    </div>
-                  </b-collapse>
-                </div>
-              </b-col>
-              <b-col cols="3">
-                <b-button variant="primary">Join</b-button>
               </b-col>
             </b-row>
           </div>
@@ -171,94 +102,24 @@
           </div>
           <div>
             <div class="tablist" role="tablist">
-              <b-row>
+              <b-row v-for="item in items" v-bind:key="item.id">
                 <b-col cols="1">
                   <b-icon-alert-circle></b-icon-alert-circle>
                 </b-col>
                 <b-col cols="8">
                   <div no-body class="mb-1 custom-tab">
-                    <a block href="#" v-b-toggle.accordion-1 variant="info">League 1</a>
-                    <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                    <a block href="#" v-b-toggle.v-bind:id="item.id" variant="info">{{item.name}}</a>
+                    <b-collapse
+                      v-b-toggle.v-bind:id="item.id"
+                      visible
+                      accordion="my-accordion"
+                      role="tabpanel"
+                    >
                       <div class="collpase-content">
-                        <b-card-text>
-                          <div>
-                            <b-table hover :items="items"></b-table>
-                          </div>
-                        </b-card-text>
-                        <!-- <b-card-text>{{ text }}</b-card-text> -->
-                      </div>
-                    </b-collapse>
-                  </div>
-                </b-col>
-                <b-col cols="3">
-                  <b-button variant="primary">Accept</b-button>
-                </b-col>
-              </b-row>
-
-              <b-row>
-                <b-col cols="1">
-                  <b-icon-alert-circle></b-icon-alert-circle>
-                </b-col>
-                <b-col cols="8">
-                  <div no-body class="mb-1 custom-tab">
-                    <a block href="#" v-b-toggle.accordion-2 variant="info">League 2</a>
-                    <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
-                      <div class="collpase-content">
-                        <b-card-text>
-                          I start opened because
-                          <code>visible</code> is
-                          <code>true</code>
-                        </b-card-text>
-                        <!-- <b-card-text>{{ text }}</b-card-text> -->
-                      </div>
-                    </b-collapse>
-                  </div>
-                </b-col>
-                <b-col cols="3">
-                  <b-button variant="primary">Accept</b-button>
-                </b-col>
-              </b-row>
-
-              <b-row>
-                <b-col cols="1">
-                  <b-icon-alert-circle></b-icon-alert-circle>
-                </b-col>
-                <b-col cols="8">
-                  <div no-body class="mb-1 custom-tab">
-                    <a block href="#" v-b-toggle.accordion-3 variant="info">League 3</a>
-                    <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
-                      <div class="collpase-content">
-                        <b-card-text>
-                          I start opened because
-                          <code>visible</code> is
-                          <code>true</code>
-                        </b-card-text>
-                        <!-- <b-card-text>{{ text }}</b-card-text> -->
-                      </div>
-                    </b-collapse>
-                  </div>
-                </b-col>
-                <b-col cols="3">
-                  <b-button variant="primary">Accept</b-button>
-                </b-col>
-              </b-row>
-
-              <b-row>
-                <b-col cols="1">
-                  <b-icon-alert-circle></b-icon-alert-circle>
-                </b-col>
-                <b-col cols="8">
-                  <div no-body class="mb-1 custom-tab">
-                    <a block href="#" v-b-toggle.accordion-4 variant="info">League 4</a>
-                    <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
-                      <div class="collpase-content">
-                        <b-card-text>
-                          I start opened because
-                          <code>visible</code> is
-                          <code>true</code>
-                        </b-card-text>
-                        <!-- <b-card-text>{{ text }}</b-card-text> -->
-                      </div>
+                      <b-card-text>
+                       {{item.items}}
+                      </b-card-text>  
+                    </div>
                     </b-collapse>
                   </div>
                 </b-col>

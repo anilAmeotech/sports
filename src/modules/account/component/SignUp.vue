@@ -29,6 +29,9 @@
               required
               autofocus
             />
+            <div v-if="loader" class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
             <label>Password</label>
             <input
               type="password"

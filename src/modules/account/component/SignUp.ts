@@ -12,6 +12,7 @@ export default class SignUp extends Vue {
   private formSubmit: boolean = false;
   private isagree: boolean = false;
   private passworderror: any = "";
+  loader: boolean = false;
 
   private form = {
     username: '',
@@ -23,7 +24,7 @@ export default class SignUp extends Vue {
   public Signup() {
 
     if (this.form.password === this.form.repeatpassword) {
-
+      this.loader = true;
       this.errorMessage = '';
       this.formSubmit = true;
       let createUser = {
@@ -35,6 +36,7 @@ export default class SignUp extends Vue {
       authService.SignUp(createUser).then(
         (data: any) => {
           console.log(data);
+          this.loader = false;
           this.formSubmit = false;
         },
         (success: any) => {

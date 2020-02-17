@@ -29,9 +29,6 @@
               required
               autofocus
             />
-            <div v-if="loader" class="spinner-border text-primary" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
             <label>Password</label>
             <input
               type="password"
@@ -64,7 +61,13 @@
               <div class="col-sm-6">
                 <a href="/login">
                   <div>
-                    <button class="btn" :disabled="!isagree" type="submit">
+                    <button class="btn" :disabled="!isagree || loader" type="submit">
+                      <span
+                        v-if="loader"
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
                       <span
                         class="mr-1"
                         v-bind:class="[

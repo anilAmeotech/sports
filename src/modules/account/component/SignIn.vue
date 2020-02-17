@@ -16,10 +16,7 @@
               placeholder="Email address"
               required
               autofocus
-            />
-            <div v-if="loader" class="spinner-border text-primary" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
+            />            
             <label>Password</label>
             <input
               type="password"
@@ -35,7 +32,15 @@
             <div class="row">
               <div class="col-sm-6">
                 <div>
-                  <button class="btn" type="submit">Sign In</button>
+                  <button class="btn" :disabled="loader" type="submit">
+                      <span
+                        v-if="loader"
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>                      
+                      Sign In
+                    </button>                
                 </div>
               </div>
 

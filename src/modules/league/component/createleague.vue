@@ -47,36 +47,21 @@
               <b-card-text class="float-right"> Select Points </b-card-text>
             </div>
             <ul class="categoory-list">
-              <li class="category-item">
+              <li v-for="item in items" v-bind:key="item.id" class="category-item">
                 <b-form-checkbox
-                  id="checkbox-1"
+                  v-bind:key="item.id"
                   v-model="status"
                   name="checkbox-1"
                   value="accepted"
                   unchecked-value="not_accepted"
                 >
-                  Guess series winner
+                  {{item.name}}
                 </b-form-checkbox>
                 <b-form-select
                   v-model="selected"
                   :options="options"
                 ></b-form-select>
-              </li>
-              <li class="category-item">
-                <b-form-checkbox
-                  id="checkbox-2"
-                  v-model="status"
-                  name="checkbox-2"
-                  value="accepted"
-                  unchecked-value="not_accepted"
-                >
-                  Guess series Score
-                </b-form-checkbox>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                ></b-form-select>
-              </li>
+              </li>              
             </ul>
           </div>
         </b-tab>

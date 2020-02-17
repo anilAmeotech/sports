@@ -12,13 +12,13 @@ export default class createleague extends Vue {
     data() {
         return {
           items: [         
-            { "name": "preset-1", "id": "accordion-1" },
-            { "name": "preset-2", "id": "accordion-2" },
-            { "name": "preset-3", "id": "accordion-3" },
-            { "name": "preset-4", "id": "accordion-4" },
-            { "name": "preset-5", "id": "accordion-5" },
-            { "name": "preset-6", "id": "accordion-6" },
-            { "name": "preset-7", "id": "accordion-7" }            
+            { "name": "Winner Series", "id": "checkbox-1" },
+            { "name": "Winner-2", "id": "checkbox-2" },
+            { "name": "Winner-3", "id": "checkbox-3" },
+            { "name": "Winner-4", "id": "checkbox-4" },
+            { "name": "Winner-5", "id": "checkbox-5" },
+            { "name": "Winner-6", "id": "checkbox-6" },
+            { "name": "Winner-7", "id": "checkbox-7" }            
           ]
         }
       }

@@ -2,14 +2,17 @@
   <div class="createleague">
     <h3>Create League</h3>
     <div class="row">
-      <b-col
-        ><b-form-input placeholder="Enter League Name"></b-form-input
-      ></b-col>
-      <b-col
-        ><b-form-select>
+      <b-col>
+        <b-form-input placeholder="Enter League Name"></b-form-input>
+      </b-col>
+      <b-col>
+        <b-form-select>
           <b-form-select-option>Choose Enterprise</b-form-select-option>
-        </b-form-select></b-col
-      >
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </b-form-select>
+      </b-col>
     </div>
 
     <div no-body class="custom-card">
@@ -24,7 +27,12 @@
                 <ol v-for="item in items" v-bind:key="item.id">
                   <div no-body class="mb-1 custom-tab">
                     <a block href="#" v-b-toggle.v-bind:id="item.id" variant="info">{{item.name}}</a>
-                    <b-collapse v-bind:id="item.id" visible accordion="my-accordion" role="tabpanel">
+                    <b-collapse
+                      v-bind:id="item.id"
+                      visible
+                      accordion="my-accordion"
+                      role="tabpanel"
+                    >
                       <div class="collpase-content">
                         <b-card-text>
                           I start opened because
@@ -36,15 +44,15 @@
                     </b-collapse>
                   </div>
                 </ol>
-              </ul>            
+              </ul>
             </div>
           </div>
         </b-tab>
         <b-tab title="Customize Your League">
           <div>
             <div class="box-header">
-              <b-card-text class="float-left"> Scroing Category </b-card-text>
-              <b-card-text class="float-right"> Select Points </b-card-text>
+              <b-card-text class="float-left">Scroing Category</b-card-text>
+              <b-card-text class="float-right">Select Points</b-card-text>
             </div>
             <ul class="categoory-list">
               <li v-for="item in items" v-bind:key="item.id" class="category-item">
@@ -54,22 +62,15 @@
                   name="checkbox-1"
                   value="accepted"
                   unchecked-value="not_accepted"
-                >
-                  {{item.name}}
-                </b-form-checkbox>
-                <b-form-select
-                  v-model="selected"
-                  :options="options"
-                ></b-form-select>
-              </li>              
+                >{{item.name}}</b-form-checkbox>
+                <b-form-select v-model="selected" :options="options"></b-form-select>
+              </li>
             </ul>
           </div>
         </b-tab>
       </b-tabs>
     </div>
-    <b-button href="/successleague" pill variant="primary"
-      >Create League</b-button
-    >
+    <b-button href="/successleague" pill variant="primary">Create League</b-button>
   </div>
 </template>
 

@@ -17,6 +17,9 @@
               required
               autofocus
             />
+            <div v-if="loader" class="spinner-border text-primary" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
             <label>Password</label>
             <input
               type="password"
@@ -30,10 +33,10 @@
 
             <p class="text-danger" v-if="errorMessage">{{ errorMessage }}</p>
             <div class="row">
-              <div class="col-sm-6">               
-                  <div>
-                    <button class="btn" type="submit">Sign In</button>
-                  </div>
+              <div class="col-sm-6">
+                <div>
+                  <button class="btn" type="submit">Sign In</button>
+                </div>
               </div>
 
               <div class="col-sm-6">

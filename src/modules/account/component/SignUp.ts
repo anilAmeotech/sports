@@ -12,7 +12,7 @@ export default class SignUp extends Vue {
   private formSubmit: boolean = false;
   private isagree: boolean = false;
   private passworderror: any = "";
-  loader: boolean = false;
+  public loader: boolean = false;
 
   private form = {
     username: '',

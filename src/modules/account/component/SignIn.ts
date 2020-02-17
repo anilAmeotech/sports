@@ -9,6 +9,7 @@ export default class SignIn extends Vue {
 
     private errorMessage = '';
     private formSubmit: boolean = false;
+    public loader: boolean = false;
 
     private form = {
         email: '',
@@ -16,12 +17,14 @@ export default class SignIn extends Vue {
     };
 
     public SignIn() {
+        this.loader = true;
         this.errorMessage = '';
         this.formSubmit = true;
         let userCred = { "email": this.form.email, "password":this.form.password};
         console.log(userCred);
         authService.SignIn(userCred).then((response: any) => {
             this.formSubmit = false;
+            this.loader = false;
             const res = response.data;
             console.log(response);
             if (response.status === 200) {
@@ -36,8 +39,9 @@ export default class SignIn extends Vue {
                     this.errorMessage = "";
                 }, 3000);
             }
-        }, (err: any) => {
-            this.errorMessage = 'Invalid email or password.';
+        }, (err: any) => {    
+            this.loader = false;
+            this.errorMessage = 'Invalid email or password.';           
             setTimeout(() => {
                 this.errorMessage = "";
             }, 3000);

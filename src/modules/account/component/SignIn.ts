@@ -39,13 +39,13 @@ export default class SignIn extends Vue {
                     this.errorMessage = "";
                 }, 3000);
             }
-        }, (err: any) => {    
-            this.loader = false;
-            this.errorMessage = 'Invalid email or password.';           
-            setTimeout(() => {
-                this.errorMessage = "";
-            }, 3000);
-            this.formSubmit = false;
+        // }, (err: any) => {    
+        //     this.loader = false;
+        //     this.errorMessage = 'Invalid email or password.';           
+        //     setTimeout(() => {
+        //         this.errorMessage = "";
+        //     }, 3000);
+        //     this.formSubmit = false;
         });
     }
 }

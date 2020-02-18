@@ -38,6 +38,9 @@ export default class SignUp extends Vue {
           console.log(data);
           this.loader = false;
           this.formSubmit = false;
+          localStorage.setItem('user', JSON.stringify(data));
+          this.$store.commit('userLogged', true);
+          this.$router.push('/league');
         },
         (success: any) => {
           this.formSubmit = true;

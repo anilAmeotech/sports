@@ -25,6 +25,7 @@
               class="form-control"
               name="password"
               placeholder="Password"
+              minlength="6"
               required
             />
 

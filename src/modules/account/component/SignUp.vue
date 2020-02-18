@@ -37,6 +37,7 @@
               class="form-control"
               name="password"
               placeholder="Password"
+              minlength="6"
               required
             />
             <label>Repeat Password</label>
@@ -47,6 +48,7 @@
               class="form-control"
               name="repeatpassword"
               placeholder="Repeat Password"
+              minlength="6"
               required
             />
             <p v-if="passworderror" class="text-danger">{{ passworderror }}</p>

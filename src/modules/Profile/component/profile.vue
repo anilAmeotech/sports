@@ -63,12 +63,12 @@
                   </form>
                   <div class="row">
                     <button class="btn">
-                      <img class="gogle" src="../../../assets/google.png" />
+                      <img class="gogle" src="../../../assets/facebook.png" />
                       Connect to facebook
                     </button>
 
                     <button class="btn">
-                      <img class="gogle" src="../../../assets/facebook.png" />Connected
+                      <img class="gogle" src="../../../assets/twitter.png" />Connected
                     </button>
                   </div>
                 </b-col>
@@ -121,7 +121,7 @@
               <b-card>
                 <b-row class="my-1">
                   <label for="input-small">My Friends</label>
-                  <b-form-input id="input-small" size="sm" placeholder="Enter your name"></b-form-input>
+                  <b-form-input id="input-small" size="sm" placeholder="Enter name"></b-form-input>
                   <b-button variant="primary">Search</b-button>
                 </b-row>
 

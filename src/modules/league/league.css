@@ -19,7 +19,6 @@
   margin-top: 10px;
 }
 .createleague {
-  height: calc(100vh - 40px);
   background: #cecccc;
   float: left;
   width: 100%;
@@ -106,6 +105,8 @@
   border: solid 1px #fafafa;
   float: left;
   padding: 10px;
+  width: 100%;
+  max-height: 100%;
   display: table;
   border-top: none;
 }
@@ -142,6 +143,7 @@
   width: 20%;
   float: right;
   height: 25px;
+  height: 33px;
 }
 .createleague .custom-card .tabs .tab-content .tab-pane .box-header {
   float: left;
@@ -177,6 +179,7 @@
 }
 .createleague .rounded-pill {
   margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 50rem !important;
 }
 .createleague .card-header {
@@ -376,7 +379,6 @@
   height: 80px;
 }
 .joinleague {
-  height: calc(100vh - 40px);
   background: #cecccc;
   float: left;
   width: 100%;

@@ -34,12 +34,9 @@
                       role="tabpanel"
                     >
                       <div class="collpase-content">
-                        <b-card-text>
-                          I start opened because
-                          <code>visible</code> is
-                          <code>true</code>
-                        </b-card-text>
-                        <b-card-text>{{ text }}</b-card-text>
+                        <div>
+                          <b-table striped hover :items="items"></b-table>
+                        </div>
                       </div>
                     </b-collapse>
                   </div>
@@ -63,7 +60,9 @@
                   value="accepted"
                   unchecked-value="not_accepted"
                 >{{item.name}}</b-form-checkbox>
-                <b-form-select v-model="selected" :options="options"></b-form-select>
+                <b-form-select v-model="selected" :options="options">
+                  <b-select-option>{{item.points}}</b-select-option>
+                </b-form-select>
               </li>
             </ul>
           </div>

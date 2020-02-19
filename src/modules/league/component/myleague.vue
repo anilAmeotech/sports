@@ -3,22 +3,22 @@
     <h3>My League</h3>
     <div no-body class="row leaguesfeed">
       <b-col cols="10" class="firstcol">
-        <b-tabs align="left">
-          <b-tab
-            v-for="item in data"
-            :key="item.itemName"
-            v-bind:title="item.itemName"
-          >
+        <b-tabs v-model="tabIndex" class="scrollmenu" align="center">
+          <b-row>
+            <button class="btnleft" @click="tabIndex--">
+              <b-icon-chevron-left></b-icon-chevron-left>
+            </button>
+            <button class="btnright" @click="tabIndex++">
+              <b-icon-chevron-right></b-icon-chevron-right>
+            </button>
+          </b-row>
+          <b-tab v-for="item in data" :key="item.itemName" v-bind:title="item.itemName">
             <div>
               <b-table hover :items="item.items"></b-table>
             </div>
             <div class="overflow">
               <div class="mt-3">
-                <b-pagination
-                  v-model="currentPage"
-                  pills
-                  :total-rows="item.count"
-                ></b-pagination>
+                <b-pagination v-model="currentPage" pills :total-rows="item.count"></b-pagination>
               </div>
             </div>
           </b-tab>
@@ -26,13 +26,7 @@
       </b-col>
       <b-col cols="2" class="secondcol">
         <div>
-          <b-dropdown
-            id="dropdown-dropup"
-            dropup
-            text="Feeds"
-            variant="primary"
-            class="float-left"
-          >
+          <b-dropdown id="dropdown-dropup" dropup text="Feeds" variant="primary" class="float-left">
             <div>
               <b-card tag="article" style="max-width: 20rem;" class="mb-2">
                 <div class="row">
@@ -68,43 +62,23 @@
 
                 <div class="row">
                   <div cols="6">
-                    <img
-                      src="https://picsum.photos/600/300/?image=25"
-                      height="80"
-                      width="80"
-                    />
+                    <img src="https://picsum.photos/600/300/?image=25" height="80" width="80" />
                   </div>
                   <div cols="6" class="secondcol">
                     <div class="row">
                       <div cols="6" class="images">
-                        <img
-                          src="https://picsum.photos/600/300/?image=25"
-                          height="30"
-                          width="30"
-                        />
+                        <img src="https://picsum.photos/600/300/?image=25" height="30" width="30" />
                       </div>
                       <div cols="6" class="images">
-                        <img
-                          src="https://picsum.photos/600/300/?image=25"
-                          height="30"
-                          width="30"
-                        />
+                        <img src="https://picsum.photos/600/300/?image=25" height="30" width="30" />
                       </div>
                     </div>
                     <div class="row">
                       <div cols="6" class="images">
-                        <img
-                          src="https://picsum.photos/600/300/?image=25"
-                          height="30"
-                          width="30"
-                        />
+                        <img src="https://picsum.photos/600/300/?image=25" height="30" width="30" />
                       </div>
                       <div cols="6" class="images">
-                        <img
-                          src="https://picsum.photos/600/300/?image=25"
-                          height="30"
-                          width="30"
-                        />
+                        <img src="https://picsum.photos/600/300/?image=25" height="30" width="30" />
                       </div>
                     </div>
                   </div>

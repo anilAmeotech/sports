@@ -210,15 +210,30 @@
   color: #302c2c;
   padding-top: 20px;
 }
+.myleague .leaguesfeed {
+  margin: 0px;
+}
 .myleague .leaguesfeed .firstcol {
   margin-left: 5% !important;
   max-width: 75% !important;
 }
-.myleague .leaguesfeed .nav-tabs {
+.myleague .leaguesfeed .firstcol .scrollmenu .btnleft {
+  margin-top: -50px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+}
+.myleague .leaguesfeed .firstcol .scrollmenu .btnright {
+  margin-top: -77px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 95%;
+}
+.myleague .leaguesfeed .firstcol .scrollmenu .nav-tabs {
   border: none;
   margin: 19px 80px;
 }
-.myleague .leaguesfeed .nav-tabs .nav-item .nav-link {
+.myleague .leaguesfeed .firstcol .scrollmenu .nav-tabs .nav-item .nav-link {
   background-color: none;
   border: none;
   color: #696969;
@@ -226,80 +241,92 @@
   text-decoration: none;
   outline: none;
 }
-.myleague .leaguesfeed .nav-tabs .nav-item .nav-link .nav-link.active {
+.myleague .leaguesfeed .firstcol .scrollmenu .nav-tabs .nav-item .nav-link .nav-link.active {
   border-color: none;
   background-color: none;
   color: #495057;
   border-bottom: 1px solid #414bda;
 }
-.myleague .leaguesfeed .nav-tabs .nav-item .nav-link .nav-link.active ul li a {
+.myleague .leaguesfeed .firstcol .scrollmenu .nav-tabs .nav-item .nav-link .nav-link.active ul li a {
   color: #000;
 }
-.myleague .leaguesfeed .nav-tabs .active {
+.myleague .leaguesfeed .firstcol .scrollmenu .nav-tabs .active {
   background: none;
   color: #000 !important;
   border-bottom: solid 1px #4d4dd6 !important;
 }
-.myleague .leaguesfeed .tab-content {
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content {
   background: #fff;
   margin-top: 20px;
   max-height: 500px;
 }
-.myleague .leaguesfeed .tab-content .tab-pane .table {
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane {
+  flex-wrap: nowrap;
+}
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane .wrap {
+  overflow: hidden;
+  width: 100%;
+  flex-direction: row;
+}
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane .nav-tabs {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane .table {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
 }
-.myleague .leaguesfeed .tab-content .tab-pane .overflow .mt-3 {
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane .overflow .mt-3 {
   margin-top: 1rem !important;
 }
-.myleague .leaguesfeed .tab-content .tab-pane .overflow .mt-3 .pagination {
+.myleague .leaguesfeed .firstcol .scrollmenu .tab-content .tab-pane .overflow .mt-3 .pagination {
   padding: 0 0 5% 35%;
 }
-.myleague .secondcol .float-left {
+.myleague .leaguesfeed .secondcol {
+  padding-left: 1em;
+}
+.myleague .leaguesfeed .secondcol .float-left {
   float: left !important;
   width: 100%;
   margin-bottom: 25px;
 }
-.myleague .secondcol .float-left .btn {
+.myleague .leaguesfeed .secondcol .float-left .btn {
   margin-top: 300%;
   color: #fff;
   background-color: #0062cc;
   border-color: #005cbf;
   border-radius: 20px;
 }
-.myleague .secondcol .float-left .dropdown-menu {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-top: 0;
   margin-bottom: 0.125rem;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 {
   margin-bottom: 0.5rem !important;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .image {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body .image {
   border-radius: 50%;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .heading h5 {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body .heading h5 {
   margin: 13px 0 0 15px;
   line-height: 0px;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .timing {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body .timing {
   margin: 2px 0 0 15px;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .timing span {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body .timing span {
   font-size: 10px;
   color: lightgray;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body p {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body p {
   font-size: 12px;
   margin-bottom: 0;
   line-height: 16px;
 }
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .secondcol {
-  padding-left: 1em;
-}
-.myleague .secondcol .float-left .dropdown-menu .mb-2 .card-body .secondcol .images {
+.myleague .leaguesfeed .secondcol .float-left .dropdown-menu .mb-2 .card-body .images {
   padding: 3px;
   border-radius: 20px;
 }

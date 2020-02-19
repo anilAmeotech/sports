@@ -28,7 +28,7 @@
     }
     .btn-primary{
       margin-top: 10px;
-    }   
+    }
   }
 }
 
@@ -141,12 +141,12 @@
                 width: 100%;
                 max-height: 100%;
                 display: table;
-                border-top: none;               
+                border-top: none;
               }
             }
             .mb-1{
               margin-left: -40px;
-          }
+            }
           }
 
           .categoory-list {
@@ -264,7 +264,7 @@
   float: left;
   width: 100%;
   background-color: rgb(235, 235, 235);
-  
+
   h3 {
     text-align: center;
     color: rgb(48, 44, 44);
@@ -272,124 +272,153 @@
   }
 
   .leaguesfeed {
+    margin: 0px;
     .firstcol {
       margin-left: 5% !important;
       max-width: 75% !important;
-    }
 
-    .nav-tabs {
-      border: none;
-      margin: 19px 80px;
+      .scrollmenu {            
+        .btnleft {
+          margin-top: -50px;
+          margin-right: 10px;
+          margin-bottom: 50px;
+          margin-left: 15px;
+        }
 
-      .nav-item {
-        .nav-link {
-          background-color: none;
+        .btnright {
+          margin-top: -77px;
+          margin-right: 0px;
+          margin-bottom: 50px;
+          margin-left: 95%;
+        }
+
+        .nav-tabs {
           border: none;
-          color: #696969;
-          padding: 3px 15px;
-          text-decoration: none;
-          outline: none;
+          margin: 19px 80px;
 
-          .nav-link.active {
-            border-color: none;
-            background-color: none;
-            color: #495057;
-            border-bottom: 1px solid #414bda;
+          .nav-item {
+            .nav-link {
+              background-color: none;
+              border: none;
+              color: #696969;
+              padding: 3px 15px;
+              text-decoration: none;
+              outline: none;
 
-            ul {
-              li {
-                a {
-                  color: #000;
+              .nav-link.active {
+                border-color: none;
+                background-color: none;
+                color: #495057;
+                border-bottom: 1px solid #414bda;
+
+                ul {
+                  li {
+                    a {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .active {
+            background: none;
+            color: #000 !important;
+            border-bottom: solid 1px #4d4dd6 !important;
+          }
+        }
+
+        .tab-content {
+          background: #fff;
+          margin-top: 20px;
+          max-height: 500px;
+
+          .tab-pane {
+            flex-wrap: nowrap;
+
+            .wrap {
+              overflow: hidden;
+              width: 100%;
+              flex-direction: row;
+            }
+
+            .nav-tabs {
+              flex-wrap: nowrap;
+              white-space: nowrap;
+            }
+
+            .table {
+              width: 100%;
+              margin-bottom: 1rem;
+              color: #212529;
+            }
+
+            .overflow {
+              .mt-3 {
+                margin-top: 1rem !important;
+
+                .pagination {
+                  padding: 0 0 5% 35%;
                 }
               }
             }
           }
         }
       }
-
-      .active {
-        background: none;
-        color: #000 !important;
-        border-bottom: solid 1px #4d4dd6 !important;
-      }
     }
 
-    .tab-content {
-      background: #fff;
-      margin-top: 20px;
-      max-height: 500px;
+    .secondcol {
+      padding-left: 1em;
 
-      .tab-pane {
-        .table {
-          width: 100%;
-          margin-bottom: 1rem;
-          color: #212529;
-        }
-
-        .overflow {
-          .mt-3 {
-            margin-top: 1rem !important;
-
-            .pagination {
-              padding: 0 0 5% 35%;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .secondcol {
       .float-left {
-      float: left !important;
-      width: 100%;
-      margin-bottom: 25px;
-      .btn {
-        margin-top: 300%;
-        color: #fff;
-        background-color: #0062cc;
-        border-color: #005cbf;
-        border-radius: 20px;
-      }
+        float: left !important;
+        width: 100%;
+        margin-bottom: 25px;
 
-      .dropdown-menu {
-        top: auto;
-        bottom: 100%;
-        margin-top: 0;
-        margin-bottom: 0.125rem;
+        .btn {
+          margin-top: 300%;
+          color: #fff;
+          background-color: #0062cc;
+          border-color: #005cbf;
+          border-radius: 20px;
+        }
 
-        .mb-2 {
-          margin-bottom: 0.5rem !important;
+        .dropdown-menu {
+          top: auto;
+          bottom: 100%;
+          margin-top: 0;
+          margin-bottom: 0.125rem;
 
-          .card-body {
-            .image {
-              border-radius: 50%;
-            }
+          .mb-2 {
+            margin-bottom: 0.5rem !important;
 
-            .heading {
-              h5 {
-                margin: 13px 0 0 15px;
-                line-height: 0px;
+            .card-body {
+              .image {
+                border-radius: 50%;
               }
-            }
 
-            .timing {
-              margin: 2px 0 0 15px;
-
-              span {
-                font-size: 10px;
-                color: lightgray;
+              .heading {
+                h5 {
+                  margin: 13px 0 0 15px;
+                  line-height: 0px;
+                }
               }
-            }
 
-            p {
-              font-size: 12px;
-              margin-bottom: 0;
-              line-height: 16px;
-            }
+              .timing {
+                margin: 2px 0 0 15px;
 
-            .secondcol {
-              padding-left: 1em;
+                span {
+                  font-size: 10px;
+                  color: lightgray;
+                }
+              }
+
+              p {
+                font-size: 12px;
+                margin-bottom: 0;
+                line-height: 16px;
+              }
 
               .images {
                 padding: 3px;

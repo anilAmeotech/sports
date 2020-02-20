@@ -7,14 +7,36 @@
             <p class="small text-danger" v-if="errorMessage">{{ errorMessage }}</p>
             <h2>Sign Up</h2>
             <h4>Enter your email address to create your account on SportClub</h4>
-            <label>Username</label>
+            <label>FirstName</label>
             <input
               type="text"
-              id="username"
-              v-model="form.username"
+              id="firstName"
+              v-model="form.firstName"
               class="form-control"
-              name="username"
-              placeholder="Username"
+              name="firstName"
+              placeholder="FirstName"
+              required
+              autofocus
+            />
+            <label>LastName</label>
+            <input
+              type="text"
+              id="lastName"
+              v-model="form.lastName"
+              class="form-control"
+              name="lastName"
+              placeholder="LastName"
+              required
+              autofocus
+            />
+              <label>NickName</label>
+            <input
+              type="text"
+              id="nickName"
+              v-model="form.nickName"
+              class="form-control"
+              name="nickName"
+              placeholder="NickName"
               required
               autofocus
             />
@@ -40,14 +62,14 @@
               minlength="6"
               required
             />
-            <label>Repeat Password</label>
+            <label>Confirm Password</label>
             <input
               type="password"
               id="inputPassword"
               v-model="form.repeatpassword"
               class="form-control"
               name="repeatpassword"
-              placeholder="Repeat Password"
+              placeholder="Confirm Password"
               minlength="6"
               required
             />

@@ -13,12 +13,15 @@ export default class SignUp extends Vue {
   private isagree: boolean = false;
   private passworderror: any = "";
   public loader: boolean = false;
-
+  
   private form = {
-    username: '',
+    firstName: '',
+    lastName: '',
+    nickName: '',
+    timeZone: new Date(),
     email: '',
-    password: '',
-    repeatpassword: ''
+    password: '',         
+    repeatpassword: ''    
   };
 
   public Signup() {
@@ -28,7 +31,10 @@ export default class SignUp extends Vue {
       this.errorMessage = '';
       this.formSubmit = true;
       let createUser = {
-        "username": this.form.username,
+        "firstName": this.form.firstName,
+        "lastName": this.form.lastName,
+        "nickName": this.form.nickName,
+        "timeZone": this.form.timeZone,
         "email": this.form.email,
         "password": this.form.password,
         "repeatpassword": this.form.repeatpassword

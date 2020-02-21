@@ -58,34 +58,38 @@
                       </div>
                     </b-col>
                     <b-col cols="3">
-                      <b-button variant="primary" v-b-modal.my-modal>Join</b-button>
-
-                      <b-modal id="my-modal">
-                        <template v-slot:modal-header="{}">
+                      <b-button
+                        id="show-btn"
+                        variant="primary"
+                        @click="$bvModal.show('bv-modal-example')"
+                      >Join</b-button>
+                      <b-modal id="bv-modal-example" hide-footer>
+                        <template v-slot:modal-title>
                           <div class="popup" style="float:left; width:100%;">
                             <h3>Terms and Conditions</h3>
                           </div>
                         </template>
-
-                        <p>Please read carefully all terms and conditions</p>
-                        <label class="checkbox-inline">
-                          <input type="checkbox" v-model="isagree" name="checkbox" /> I
-                          understand and agree to
-                          <a href>Privacy Policy</a> and
-                          <a href>Terms of Services</a>
-                        </label>
-                        <template v-slot:modal-footer="{}">
-                          <div class="popup" style="float:left; width:100%;">
-                            <b-button
-                              :disabled="!isagree"
-                              pill
-                              size="md"
-                              style="width: 20%;"
-                              variant="primary"
-                              @click="Join()"
-                            >Join</b-button>
-                          </div>
-                        </template>
+                        <div class="d-block text-center">
+                          <p>Please read carefully all terms and conditions</p>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" v-model="isagree" name="checkbox" /> I
+                            understand and agree to
+                            <a
+                              href
+                            >Privacy Policy</a> and
+                            <a href>Terms of Services</a>
+                          </label>
+                        </div>
+                        <b-button
+                          :disabled="!isagree"
+                          pill
+                          size="md"
+                          style="width: 20%;"
+                          variant="primary"
+                          class="mt-3"
+                          block
+                          @click="$bvModal.hide('bv-modal-example')"
+                        >Join</b-button>
                       </b-modal>
                     </b-col>
                   </b-row>
@@ -190,34 +194,38 @@
                       </div>
                     </b-col>
                     <b-col cols="3">
-                      <b-button variant="primary" v-b-modal.my-modal>Join</b-button>
-                      <!-- The modal -->
-                      <b-modal id="my-modal">
-                        <template v-slot:modal-header="{}">
+                      <b-button
+                        id="show-btn"
+                        variant="primary"
+                        @click="$bvModal.show('bv-modal-example')"
+                      >Join</b-button>
+                      <b-modal id="bv-modal-example" hide-footer>
+                        <template v-slot:modal-title>
                           <div class="popup" style="float:left; width:100%;">
                             <h3>Terms and Conditions</h3>
                           </div>
                         </template>
-
-                        <p>Please read carefully all terms and conditions</p>
-                        <label class="checkbox-inline">
-                          <input type="checkbox" v-model="isagree" name="checkbox" /> I
-                          understand and agree to
-                          <a href>Privacy Policy</a> and
-                          <a href>Terms of Services</a>
-                        </label>
-                        <template v-slot:modal-footer="{}">
-                          <div class="popup" style="float:left; width:100%;">
-                            <b-button
-                              :disabled="!isagree"
-                              pill
-                              size="md"
-                              style="width: 20%;"
-                              variant="primary"
-                              @click="Join()"
-                            >Join</b-button>
-                          </div>
-                        </template>
+                        <div class="d-block text-center">
+                          <p>Please read carefully all terms and conditions</p>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" v-model="isagree" name="checkbox" /> I
+                            understand and agree to
+                            <a
+                              href
+                            >Privacy Policy</a> and
+                            <a href>Terms of Services</a>
+                          </label>
+                        </div>
+                        <b-button
+                          :disabled="!isagree"
+                          pill
+                          size="md"
+                          style="width: 20%;"
+                          variant="primary"
+                          class="mt-3"
+                          block
+                          @click="$bvModal.hide('bv-modal-example')"
+                        >Join</b-button>
                       </b-modal>
                     </b-col>
                   </b-row>

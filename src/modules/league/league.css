@@ -435,6 +435,7 @@
 .joinleague .tabs .nav-tabs {
   border: none;
   margin: 19px 0px;
+  background: #ebebeb;
 }
 .joinleague .tabs .nav-tabs .nav-item .nav-link {
   background-color: none;
@@ -468,10 +469,10 @@
 .joinleague .tabs .tab-content {
   background: #fff;
   margin-top: 20px;
-  margin: 0px 25%;
-  padding: 25px;
+  margin: 0px 15%;
+  padding: 5px;
   height: auto;
-  overflow-y: auto;
+  margin-bottom: 5%;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .row {
   padding: 6px;

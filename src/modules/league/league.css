@@ -459,7 +459,7 @@
   border-bottom: solid 1px #4d4dd6 !important;
 }
 .joinleague .tabs .button {
-  margin: 0px 0 0 1%;
+  margin-left: 2%;
 }
 .joinleague .tabs .form-control {
   width: 40%;
@@ -478,7 +478,7 @@
   margin: 0 0 0 -28px;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .row button.btn.btn-primary {
-  margin-left: 45%;
+  margin-left: 58%;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .custom-tab a {
   float: left;

@@ -46,13 +46,13 @@ export default {
   background-color: white;
 }
 
-.navbar-nav {
-  margin: 10px;
-  text-indent: 17px;
+.navbar-nav { 
+  text-indent: 15px;
+  margin-left: 10px;
 }
 
 form {
-  margin: 0 0 0 30px;
+ margin-left: 9%;
 }
 .card {
   border: none;

@@ -472,6 +472,9 @@
   height: auto;
   margin-bottom: 5%;
 }
+.joinleague .tabs .tab-content .tab-pane .container {
+  padding: 0px;
+}
 .joinleague .tabs .tab-content .tab-pane .tablist .row {
   padding: 6px;
   margin: 0 0 0 -28px;

@@ -6,7 +6,10 @@
     </div>
     <div>
       <b-tabs align="center">
-        <b-tab title="NBA">
+        <b-tab active>
+          <template v-slot:title>
+            <img src="../../../assets/basketball.png" />
+          </template>
           <div class="container">
             <b-tabs align="center">
               <b-tab title="Public leagues">
@@ -135,7 +138,10 @@
             </b-tabs>
           </div>
         </b-tab>
-        <b-tab title="NFL" active>
+        <b-tab active>
+          <template v-slot:title>
+            <img src="../../../assets/rugby.png" />
+          </template>
           <div class="container">
             <b-tabs align="center">
               <b-tab title="Public leagues">

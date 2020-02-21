@@ -331,7 +331,6 @@
   border-radius: 20px;
 }
 .successleague {
-  height: calc(100vh - 40px);
   background: #cecccc;
   float: left;
   width: 100%;
@@ -367,10 +366,11 @@
   background-color: #fff;
   width: 65%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .successleague .profileinput .btn {
-  margin-left: 10px;
-  width: 46%;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 .successleague .profileinput .inbox {
   height: auto;

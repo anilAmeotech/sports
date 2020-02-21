@@ -44,14 +44,6 @@
 .profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .profile .card {
   border: none;
 }
-.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .profile img {
-  opacity: 0.8;
-  float: left;
-  align-self: center;
-  border-style: none;
-  width: 80px;
-  height: 80px;
-}
 .profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .my-1 {
   margin-left: 15px;
   display: flex;
@@ -76,13 +68,6 @@
 }
 .profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .friendsprofile .card {
   border: none;
-}
-.profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body .friendsprofile img {
-  align-self: center;
-  border-style: none;
-  border-radius: 42px;
-  width: 80px;
-  height: 80px;
 }
 .profile .myprofile .tabs .tab-content .tab-pane .container .card .card-body h5 {
   float: left;

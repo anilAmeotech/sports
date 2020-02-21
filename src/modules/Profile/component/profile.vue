@@ -10,6 +10,7 @@
                 <b-col>
                   <img
                     src="../../../assets/profile.png"
+                    rounded="circle" alt="image"
                     height="80"
                     width="80"
                     class="image pro-logo"
@@ -128,32 +129,32 @@
                 <b-row class="friendsprofile">
                   <b-col>
                     <div>
-                      <img src="../../../assets/p1.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/p1.png" />                       
+                      <b-card >
                         <b-card-text>tinyleopard720</b-card-text>
                       </b-card>
                     </div>
                   </b-col>
                   <b-col>
                     <div>
-                      <img src="../../../assets/p2.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img n src="../../../assets/p2.png" />
+                      <b-card >
                         <b-card-text>jenny67</b-card-text>
                       </b-card>
                     </div>
                   </b-col>
                   <b-col>
                     <div>
-                      <img src="../../../assets/p3.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/p3.png" />
+                      <b-card >
                         <b-card-text>sadoanda176</b-card-text>
                       </b-card>
                     </div>
                   </b-col>
                   <b-col>
                     <div>
-                      <img src="../../../assets/addfriend.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/addfriend.png" />
+                      <b-card >
                         <b-card-text>Add Friend</b-card-text>
                       </b-card>
                     </div>
@@ -164,16 +165,16 @@
                 <b-row class="friendsprofile">
                   <b-col>
                     <div>
-                      <img src="../../../assets/p4.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/p4.png" />
+                      <b-card>
                         <b-card-text>tinyleopard720</b-card-text>
                       </b-card>
                     </div>
                   </b-col>
                   <b-col>
                     <div>
-                      <img src="../../../assets/p5.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/p5.png" />
+                      <b-card>
                         <b-card-text>jen671</b-card-text>
                       </b-card>
                     </div>
@@ -181,8 +182,8 @@
 
                   <b-col>
                     <div>
-                      <img src="../../../assets/p6.png" />
-                      <b-card height="80" width="80" img-alt="Image" img-top tag="article">
+                      <img rounded="circle" alt="image" src="../../../assets/p6.png" />
+                      <b-card>
                         <b-card-text>blubear265</b-card-text>
                       </b-card>
                     </div>

@@ -459,8 +459,7 @@
   border-bottom: solid 1px #4d4dd6 !important;
 }
 .joinleague .tabs .button {
-  margin: 0 0 0 1%;
-  width: 15%;
+  margin: 0px 0 0 1%;
 }
 .joinleague .tabs .form-control {
   width: 40%;
@@ -473,14 +472,12 @@
   padding: 25px;
   height: auto;
   overflow-y: auto;
-  max-height: 500px;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .row {
   padding: 6px;
   margin: 0 0 0 -28px;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .row button.btn.btn-primary {
-  width: 75%;
   margin-left: 45%;
 }
 .joinleague .tabs .tab-content .tab-pane .tablist .custom-tab a {

@@ -13,7 +13,7 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
-Axios.defaults.baseURL = 'http://134.209.47.96:3000/';
+Axios.defaults.baseURL = 'http://134.209.47.96:5000/';
 
 new Vue({
   router,

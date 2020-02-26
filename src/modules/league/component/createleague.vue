@@ -50,7 +50,7 @@
               <b-card-text class="float-left">Scroing Category</b-card-text>
               <b-card-text class="float-right">Select Points</b-card-text>
             </div>
-            <ul class="categoory-list">
+            <ul class="categry-list">
               <li v-for="item in items" v-bind:key="item.id" class="category-item">
                 <b-form-checkbox
                   v-bind:key="item.id"

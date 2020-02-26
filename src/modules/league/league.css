@@ -113,32 +113,32 @@
 .createleague .custom-card .tabs .tab-content .tab-pane .tablist .mb-1 {
   margin-left: -40px;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list {
   margin-left: 0;
   padding: 0px 0;
   height: auto;
   float: left;
   width: 100%;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list .category-item {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list .category-item {
   padding: 0;
   list-style-type: none;
   width: 100%;
   margin-bottom: 5px;
   float: left;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox {
   float: left;
   margin-bottom: 0;
   font-size: 13px;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox .custom-control-label::before {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox .custom-control-label::before {
   top: 2px;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox .custom-control-label::after {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox .custom-control-label::after {
   top: 0.1rem !important;
 }
-.createleague .custom-card .tabs .tab-content .tab-pane .categoory-list .category-item .custom-select {
+.createleague .custom-card .tabs .tab-content .tab-pane .categry-list .category-item .custom-select {
   float: left;
   width: 20%;
   float: right;
@@ -520,32 +520,32 @@
 .joinleague .tabs .tab-content .tab-pane .inputbox {
   margin-bottom: 5%;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list {
+.joinleague .tabs .tab-content .tab-pane .categry-list {
   margin-left: 0;
   padding: 0px 0;
   height: auto;
   float: left;
   width: 100%;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list .category-item {
+.joinleague .tabs .tab-content .tab-pane .categry-list .category-item {
   padding: 0;
   list-style-type: none;
   width: 100%;
   margin-bottom: 5px;
   float: left;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox {
+.joinleague .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox {
   float: left;
   margin-bottom: 0;
   font-size: 13px;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox .custom-control-label::before {
+.joinleague .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox .custom-control-label::before {
   top: 2px;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list .category-item .custom-checkbox .custom-control-label::after {
+.joinleague .tabs .tab-content .tab-pane .categry-list .category-item .custom-checkbox .custom-control-label::after {
   top: 0.1rem !important;
 }
-.joinleague .tabs .tab-content .tab-pane .categoory-list .category-item .custom-select {
+.joinleague .tabs .tab-content .tab-pane .categry-list .category-item .custom-select {
   float: left;
   width: 20%;
   float: right;
